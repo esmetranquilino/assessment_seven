@@ -1,0 +1,27 @@
+Timing Information:
+-------------------
+
+Extra Large Array
+-----------------
+Time to run code with push(): 5.013587 ms
+Time to run code with unshift(): 1.8952618989999999 s
+
+Large Array
+-----------
+Time to run code with push():115.546 μs
+Time to run code with unshift():12.989425 ms
+
+Medium Array
+------------
+Time to run code with push():9.755 μs
+Time to run code with unshift():123.2 μs
+
+Small Array
+-----------
+Time to run code with push(): 5.01 μs
+Time to run code with unshift(): 8.919 μs
+
+Tiny Array
+----------
+Time to run code with push():46.358 μs
+Time to run code with unshift(): 43.454 μs
