@@ -16,12 +16,13 @@ function addToZero(array){
     }   
 }
 
-// function hasUniqueChars runtime is O(n) and space is O(n)
+// runtime is O(n)
+// space is O(n)
 
 function hasUniqueChars(word){
     for (let i = 0; i < word.length-1; i++) {
         for (let j = i+1; j < word.length; j++){
-            if (j === i) {
+            if (word[j] === word[i]) {
                 return false
             }
         }
@@ -30,29 +31,23 @@ function hasUniqueChars(word){
     return true;
 }
 
-//function isPangram runtime is O(n) and space is o(n)
+//runtime is O(n) 
+//space is O(n)
 
 
-function isPangram(s){
-    let alphabet = [
-        {a: 0, b: 0, c: 0,}
-    ]
-    for(char of s)
-    {
-        if(alphabet.includes(char.toLowerCase()))
-        {
-            alphabet.char.toLowerCase() ++
+function isPangram(sent){
+    sent = sent.toLowerCase();
+    let letter = new Set();
+    for (characters of sent) {
+        if (/[a-z]/.test (characters)) {
+            letter.add(characters);
         }
     }
-    for (letter of alphabet) {
-        if (letter.value == 0) {
-            return false
-        }
-    }
-    return true
+    return letter.size === 26;
 }
 
-// function findLongestWord runtime is O(n) and space is O(1)
+// runtime is O(n) 
+//space is O(n)
 
 function findLongestWord(arr) {
     let arrSize = []

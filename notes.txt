@@ -25,3 +25,8 @@ Tiny Array
 ----------
 Time to run code with push():46.358 μs
 Time to run code with unshift(): 43.454 μs
+
+
+
+The functions that scale better are the unshift functions that run the tiny and small arrays. 
+The other funtions (medium, large, extra large arr) scale push better.
